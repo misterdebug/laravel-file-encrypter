@@ -1,0 +1,49 @@
+{
+    "name": "mrdebug/lara-file-encrypt",
+    "description": "LaraFileEncrypter: A Laravel package enabling secure and seamless management of encrypted files without the need for persistent key storage.",
+    "license": "MIT",
+    "keywords": [
+        "laravel-package",
+        "crud-generator",
+        "laravel-file-encrypter",
+        "composer-package",
+        "laravel",
+        "laravel10",
+        "encrypt",
+        "decrypt",
+        "encryption",
+        "decryption",
+        "file encryption",
+        "security",
+        "secure file management",
+        "password-based encryption",
+        "file protection"
+    ],
+    "authors": [
+        {
+            "name": "Jonathan Escarem",
+            "email": "jonathan@labo-dev.fr"
+        }
+    ],
+    "require":
+    	{
+    		"php": ">=8.0.0"
+    	},
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Mrdebug\\LaraFileEncrypter\\": "src/"
+        }
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers":
+            [
+                "Mrdebug\\LaraFileEncrypter\\LaraFileEncrypterServiceProvider"
+            ]
+        }
+    }
+}
