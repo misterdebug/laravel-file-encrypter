@@ -1,5 +1,5 @@
 {
-    "name": "mrdebug/lara-file-encrypt",
+    "name": "mrdebug/lara-file-encrypter",
     "description": "LaraFileEncrypter: A Laravel package enabling secure and seamless management of encrypted files without the need for persistent key storage.",
     "license": "MIT",
     "keywords": [
