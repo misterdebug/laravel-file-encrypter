@@ -5,8 +5,9 @@ namespace Mrdebug\LaraFileEncrypter\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static mixed encrypt(string $filePath, string $rawPassword)
- * @method static mixed decrypt(string $filePath, string $rawPassword)
+ * @method static mixed encryptFile(string $filePath, string $rawPassword)
+ * @method static mixed decryptContentFile(string $filePath, string $rawPassword)
+ * @method static mixed decryptAndStreamDownloadFile(string $filePath, string $rawPassword)
  *
  * @see \Mrdebug\LaraFileEncrypter\LaraFileEncrypter
  */

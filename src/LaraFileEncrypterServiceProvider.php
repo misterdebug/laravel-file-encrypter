@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrdebug\LaraEncryptedFiles;
+namespace Mrdebug\LaraFileEncrypter;
 
 use Illuminate\Support\ServiceProvider;
 use Mrdebug\LaraFileEncrypter\LaraFileEncrypter;
@@ -12,7 +12,7 @@ class LaraFileEncrypterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('lara-file-encrypter', function () {
+        $this->app->singleton('lara-file-encrypter', function ($app) {
             return new LaraFileEncrypter;
         });
     }
