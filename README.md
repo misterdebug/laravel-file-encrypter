@@ -63,9 +63,3 @@ and
 ## License
 
 This package is licensed under the [license MIT](http://opensource.org/licenses/MIT).
-
-tests
-vendor/bin/phpunit vendor/mrdebug/crudgen/tests/
-php artisan make:crud post "title, content:text"
-php artisan rm:crud post --force
-php artisan test
