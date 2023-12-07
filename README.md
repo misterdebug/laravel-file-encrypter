@@ -1,5 +1,8 @@
 # LaraFileEncrypter: Secure your files in Laravel with AES-256 encryption, without persistent key storage hassle.
 
+![image](https://github.com/misterdebug/laravel-file-encrypter/assets/23297600/3afbce38-ddfa-46ab-83d8-463cde2db07b)
+
+
 LaraFileEncrypter is a Laravel package, designed to enhance file security in your applications. With a straightforward integration, it enables you to easily implement AES-256 encryption. What sets LaraFileEncrypter apart is its unique approach: delivering maximum security without the need for key storage. Now, securing your files becomes a straightforward process, ensuring data confidentiality without added complexity.
 
 ## How does it work?
