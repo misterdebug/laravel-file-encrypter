@@ -37,28 +37,52 @@ This package provides a facade called `LaraFileEncrypter`.
 The `encryptFile` method `public function encryptFile(string $filePath, string $rawPassword)` locates a file and replaces its existing content with his encrypted content using the provided password. The password must be provided in raw text.
 
 Example :
-`LaraFileEncrypter::encryptFile(storage_path('app/files/secret-file.pdf'), 'mysecurerawpassword');`
+```php 
+LaraFileEncrypter::encryptFile(
+  storage_path('app/files/secret-file.pdf'),
+  'mysecurerawpassword'
+);
+```
 
 You can add a salt :
-`LaraFileEncrypter::encryptFile(storage_path('app/files/secret-file.pdf'), 'mysecurerawpassword'.$salt);`
+```php 
+LaraFileEncrypter::encryptFile(
+  storage_path('app/files/secret-file.pdf'),
+  'mysecurerawpassword'.$salt
+);
+```
 
 ### Decrypt a file
 
 The `LaraFileEncrypter` facade provides two methods for decrypting a file. One method streamDownload (`decryptAndStreamDownloadFile()`) the file, while the other decrypts the file's content (`decryptContentFile()`).
 
-`public function decryptAndStreamDownloadFile(string $filePath, string $rawPassword)`
+```php 
+public function decryptAndStreamDownloadFile(string $filePath, string $rawPassword)
+```
 
 and
 
-`public function decryptContentFile(string $filePath, string $rawPassword)`
+```php
+public function decryptContentFile(string $filePath, string $rawPassword)
+```
 
 Examples : 
 
-`LaraFileEncrypter::decryptAndStreamDownloadFile(storage_path('app/files/secret-file.pdf'), 'mysecurerawpassword');`
+```php
+LaraFileEncrypter::decryptAndStreamDownloadFile(
+  storage_path('app/files/secret-file.pdf'),
+  'mysecurerawpassword'
+);
+```
 
 and 
 
-`LaraFileEncrypter::decryptContentFile(storage_path('app/files/secret-file.pdf'), 'mysecurerawpassword');`
+```php
+LaraFileEncrypter::decryptContentFile(
+  storage_path('app/files/secret-file.pdf'),
+  'mysecurerawpassword'
+);
+```
 
  You must, of course, provide the same password as used in the encryption step.
  
