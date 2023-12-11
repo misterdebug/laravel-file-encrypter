@@ -11,7 +11,7 @@ LaraFileEncrypter simplifies file security by eliminating the need to manage enc
 
 When encrypting a file, LaraFileEncrypter generates an encryption key based on the provided password. It's this key, derived from the password, that is used to secure your files using the AES-256 algorithm.
 
-This approach removes the necessity of storing or managing separate encryption keys. By choosing a robust password, you ensure effective protection of your files without the complexity associated with traditional key management. LaraFileEncrypter makes the file security process straightforward, all while providing top-tier protection.
+This approach removes the necessity of storing or managing separate encryption keys. By choosing a robust password, you ensure effective protection of your files without the complexity associated with traditional key management. 
 
 ## Pros and cons
 
@@ -22,7 +22,9 @@ This approach removes the necessity of storing or managing separate encryption k
 | No modifications needed on the files infrastructure or database side | Potentially predictable keys                             |
 
 
-Convinced ? :)
+Convinced ? 🙂
+
+If you find this project useful, please consider giving it a star⭐. It helps me prioritize and focus on keeping project up-to-date. Thank you for your support!
 
 ## Installation
 
@@ -90,3 +92,9 @@ LaraFileEncrypter::decryptContentFile(
 ## License
 
 This package is licensed under the [license MIT](http://opensource.org/licenses/MIT).
+
+## Other Projects
+
+Explore my other projects on GitHub:
+
+- **[Crud Generator Laravel](https://github.com/misterdebug/crud-generator-laravel)**: Create a Laravel 10 CRUD in a few seconds
